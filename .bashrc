@@ -14,6 +14,7 @@ alias cww="cd ~/work/wapi"
 alias coding="cd ~/coding"
 alias cw4="cd ~/work/v4; workon v4"
 alias v="vim"
+alias s="ssh"
 
 alias rmpyc="find . -name "*.pyc" -type f -delete"
 alias fuck='sudo $(history -p \!\!)'
