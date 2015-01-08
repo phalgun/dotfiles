@@ -15,8 +15,9 @@ alias coding="cd ~/coding"
 alias cw4="cd ~/work/v4; workon v4"
 alias v="vim"
 alias s="ssh"
+alias ci="ssh ci"
 
-alias rmpyc="find . -name "*.pyc" -type f -delete"
+alias rmpyc="find . -name '*.pyc' -type f -delete"
 alias fuck='sudo $(history -p \!\!)'
 
 alias gitl="git log --all --decorate --graph --date-order"
@@ -24,6 +25,7 @@ alias gits="git status"
 alias gist="git status"
 alias gitd="git diff"
 alias gitdc="git diff --cached"
+alias gitc="git commit"
 alias gitci="git commit --interactive"
 alias gitpr="git pull --rebase"
 alias gitco="git checkout"
