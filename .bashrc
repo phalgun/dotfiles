@@ -22,11 +22,12 @@ alias fuck='sudo $(history -p \!\!)'
 
 alias gitl="git log --all --decorate --graph --date-order"
 alias gits="git status"
+alias wow="git status"
 alias gist="git status"
 alias gitd="git diff"
 alias gitdc="git diff --cached"
 alias gitc="git commit"
-alias gitci="git commit --interactive"
+alias gitcam="git commit -am"
 alias gitpr="git pull --rebase"
 alias gitco="git checkout"
 alias gitcob="git checkout -b" 
@@ -34,7 +35,6 @@ alias gitpp="git pull; git push"
 alias gitp="git push" 
 alias gitb="git branch"
 alias gitba="git branch -a"
-alias gitbd=''
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/work
