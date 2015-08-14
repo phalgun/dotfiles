@@ -114,9 +114,9 @@ let g:rbpt_max = 16
 let g:rbpt_loadcmd_toggle = 0
 
 " Vim auto save plugin
-let g:auto_save = 10  " enable AutoSave on Vim startup
-let g:auto_save_no_updatetime = 1  " do not change the 'updatetime' option
-let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+" let g:auto_save = 1  " enable AutoSave on Vim startup
+" let g:auto_save_no_updatetime = 1  " do not change the 'updatetime' option
+" let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 
 " Vim window split
 nnoremap <C-J> <C-W><C-J>
