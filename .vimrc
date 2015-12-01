@@ -26,7 +26,8 @@ set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
-
+set cursorline    " highlight current line 
+set showmatch           " highlight matching [{()}]
 
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
@@ -68,10 +69,9 @@ set pastetoggle=<F8>
 map <F2> :NERDTreeToggle<CR>
 
 nmap <silent> ,/ :nohlsearch<CR>
-
 " Python-mode
 " Activate rope
-" Keys:
+" Keys
 " K             Show python docs
 " <Ctrl-Space>  Rope autocomplete
 " <Ctrl-c>g     Rope goto definition
@@ -84,9 +84,6 @@ nmap <silent> ,/ :nohlsearch<CR>
 " ]M            Jump on next class or method (normal, visual, operator modes)
 let g:pymode_rope = 1
 
-" Documentation
-let g:pymode_doc = 1
-let g:pymode_doc_key = 'K'
 
 "Linting
 let g:pymode_lint = 1
@@ -170,4 +167,8 @@ set splitright
 let ropevim_vim_completion=1
 let ropevim_extended_complete=1
 
-
+" If you prefer the Omni-Completion tip window to close when a selection is
+" " made, these lines close it on movement in insert mode or when leaving
+" " insert mode
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
