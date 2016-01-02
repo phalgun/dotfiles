@@ -66,7 +66,6 @@ endif
 let g:solarized_termcolors=256
 
 set pastetoggle=<F8>
-map <F2> :NERDTreeToggle<CR>
 
 nmap <silent> ,/ :nohlsearch<CR>
 " Python-mode
