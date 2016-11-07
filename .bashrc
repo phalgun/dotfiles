@@ -39,3 +39,6 @@ alias gitba="git branch -a"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/work
 source /usr/local/bin/virtualenvwrapper.sh
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
