@@ -55,7 +55,6 @@ autocmd filetype python set expandtab
 
 syntax enable
 set background=dark
-colorscheme solarized
 
 if has('gui_running')
     set background=light
@@ -64,6 +63,7 @@ else
 endif
 
 let g:solarized_termcolors=256
+colorscheme solarized
 
 set pastetoggle=<F8>
 
